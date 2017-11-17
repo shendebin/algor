@@ -14,4 +14,13 @@ public class PriorityQueue {
         this.queArray = new int[maxSize];
         this.nItems = 0;
     }
+
+
+    public void insert(int item){
+        //TODO
+    }
+
+    public void remove(){
+        //TODO
+    }
 }
