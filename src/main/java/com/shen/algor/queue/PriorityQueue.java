@@ -27,9 +27,9 @@ public class PriorityQueue {
                 }else {
                     break;
                 }
-                queArray[j+1] = item;
-                nItems ++;
             }
+            queArray[j+1] = item;
+            nItems ++;
         }
     }
 
