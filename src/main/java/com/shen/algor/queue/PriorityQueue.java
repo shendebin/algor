@@ -15,37 +15,37 @@ public class PriorityQueue {
         this.nItems = 0;
     }
 
-    public void insert(int item){
+    public void insert(int item) {
         int j;
 
-        if (nItems == 0){
-            queArray[nItems ++] = item;
-        }else {
-            for (j = nItems-1; j >= 0; j--){
-                if(item > queArray[j]){
-                    queArray[j+1] = queArray[j];
-                }else {
+        if (nItems == 0) {
+            queArray[nItems++] = item;
+        } else {
+            for (j = nItems - 1; j >= 0; j--) {
+                if (item > queArray[j]) {
+                    queArray[j + 1] = queArray[j];
+                } else {
                     break;
                 }
             }
-            queArray[j+1] = item;
-            nItems ++;
+            queArray[j + 1] = item;
+            nItems++;
         }
     }
 
-    public int remove(){
+    public int remove() {
         return queArray[--nItems];
     }
 
-    public int peekMin(){
-        return queArray[nItems-1];
+    public int peekMin() {
+        return queArray[nItems - 1];
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return nItems == 0;
     }
 
-    public boolean isFull(){
+    public boolean isFull() {
         return nItems == maxSize;
     }
 
