@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 更有效的方法是先将数组排序，然后使用双指针进行查找，时间复杂度为 O(N2)。
- *
+ * <p>
  * Created by shen on 2018/11/28.
  */
 public class ThreeSumTwoPointer implements ThreeSum {
